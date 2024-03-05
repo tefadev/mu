@@ -30,13 +30,13 @@ export interface Contact {
 }
 
 export interface Developer {
-  id: string;
-  name:string;
-  city: string;
-  image: string;
-  contact: Contact;
-  description: string;
-  website: string; 
+  id: string | null;
+  name:string | null;
+  city: string| null;
+  image: string| null;
+  contact: Contact| null;
+  description: string| null;
+  website: string| null; 
 }
 
 export interface Project {

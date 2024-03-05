@@ -23,7 +23,7 @@ export class DeveloperComponent {
         this.filteredDeveloperList = this.developersList;
       return;
     }
-if(text) this.filteredDeveloperList = this.developersList.filter(developer => developer?.city.toLowerCase().includes(text.toLowerCase()))
+if(text) this.filteredDeveloperList = this.developersList.filter(developer => developer?.city?.toLowerCase().includes(text.toLowerCase()))
  // if(date) this.filteredDeveloperList = this.developersList.filter(developer => developer?..toLowerCase()==(date.toLowerCase()))
 
   }
