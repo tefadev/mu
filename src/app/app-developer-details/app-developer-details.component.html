@@ -1,0 +1,24 @@
+<article>
+    <!-- <img class="listing-photo" [src]="housingLocation?.photo"
+      alt="Exterior photo of {{housingLocation?.name}}"/> -->
+    <section class="listing-description">
+      <h2 class="listing-heading">{{selectedDeveloper?.name}}</h2>
+      <p class="listing-location">{{selectedDeveloper?.city}}</p>
+    </section>
+    <section class="listing-features">
+      <h2 class="section-heading">About this housing location</h2>
+      <ul>
+        <!-- <li>Units available: {{selectedDeveloper?.availableUnits}}</li>
+        <li>Does this location have wifi: {{selectedDeveloper?.wifi}}</li>
+        <li>Does this location have laundry: {{selectedDeveloper?.laundry}}</li> -->
+      </ul>
+    </section>
+PROJECTS 
+    <section class="results">
+        <app-developer-projects-listing
+          *ngFor="let projects of selectedDeveloperProjects"
+          [project]="projects">
+        </app-developer-projects-listing>
+      </section> 
+
+  </article>

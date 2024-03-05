@@ -1,0 +1,10 @@
+<section>
+    <form>
+      <input type="text" placeholder="Filter by city" #filtercity>
+      <input type="date" placeholder="Filter by end date" #filterdate style="display: none;">
+      <button class="primary" type="button" (click)="filterResults(filtercity.value,filterdate.value)">Search</button>
+    </form>
+  </section>
+  <section class="results">
+    <app-developer-listing *ngFor="let developer of filteredDeveloperList" [developer]="developer"></app-developer-listing>
+  </section>

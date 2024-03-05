@@ -1,0 +1,15 @@
+<section class="listing">
+    <h2 class="listing-heading">{{ unit.unit_name }}</h2>
+    <p class="listing-location">{{unit.unit_building_name}}</p>
+    <p class="listing-location">{{unit.unit_layout_url }}</p>
+    <p class="listing-location">{{unit.unit_total_price_aed }}</p>
+    <p class="listing-location">{{unit.unit_total_price_usd }}</p>
+    <p class="listing-location">{{unit.unit_total_price_uro }}</p>
+    <p class="listing-location">{{unit.unit_total_price_kwit }}</p>
+    <p class="listing-location">{{unit.unit_total_price_ksa }}</p>
+    <p class="listing-location">{{unit.unit_area_sqf }}</p>
+    <p class="listing-location">{{unit.unit_area_meter }}</p>
+    <p class="listing-location">{{unit.unit_floor_no }}</p>
+    <p class="listing-location">{{unit.unit_floor_name }}</p>
+    <a [routerLink]="['/app-unit-details', unit.unit_id]">Learn More</a> 
+  </section>

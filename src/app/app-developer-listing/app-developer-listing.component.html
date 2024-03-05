@@ -1,0 +1,11 @@
+<section class="listing">
+    <img class="listing-photo" [src]="developer.image" alt="Exterior photo of {{developer.name}}">
+    <h2 class="listing-heading">{{ developer?.name }}</h2>
+    <p class="listing-location">{{developer?.city}}</p>
+    <p class="listing-location">{{developer?.image}}</p>
+    <p class="listing-location">{{developer?.description}}</p>
+    <p class="listing-location">{{developer?.contact?.phone}}</p>
+    <p class="listing-location">{{developer?.contact?.email}}</p>
+    <p class="listing-location">{{developer?.website }}</p>
+     <a [routerLink]="['/app-developer-details', developer.id]">Learn More</a> 
+  </section>
